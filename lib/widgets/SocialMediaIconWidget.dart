@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_contacts_app/SocialMediaClass.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class SocialmediaIconWidget extends StatelessWidget {
   const SocialmediaIconWidget({
@@ -14,10 +13,17 @@ class SocialmediaIconWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(15),
       child: GestureDetector(
-        onTap: () => launchUrl(Uri.parse(socialMedia.link),
-            mode: LaunchMode.externalApplication),
+        onTap: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) => ElevatedButton(
+              onPressed: () {},
+              child: Text('Start ${socialMedia.image}'),
+            ),
+          );
+        },
         child: CircleAvatar(
-          backgroundImage: AssetImage(socialMedia.image),
+          backgroundImage: AssetImage('assets/${socialMedia.image!}.png' ),
           radius: 40,
         ),
       ),

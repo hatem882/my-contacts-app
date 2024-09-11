@@ -4,28 +4,18 @@ import 'package:my_contacts_app/widgets/ContactsGridWidget.dart';
 import 'package:my_contacts_app/SocialMediaClass.dart';
 import 'package:my_contacts_app/widgets/SocialMediaIconWidget.dart';
 
-
 class ContactsPage extends StatelessWidget {
   const ContactsPage({super.key});
   final List<socialMediaModel> socialMedia = const [
-    socialMediaModel(
-        image: 'assets/face.png', link: 'https://www.facebook.com'),
-    socialMediaModel(
-        image: 'assets/insta.png', link: 'https://www.instagram.com'),
-    socialMediaModel(
-        image: 'assets/linkedin.png', link: 'https://www.linkedin.com'),
-    socialMediaModel(
-        image: 'assets/pinterest.png', link: 'https://www.pinterest.com'),
-    socialMediaModel(
-        image: 'assets/snap.png', link: 'https://www.snapchat.com'),
-    socialMediaModel(
-        image: 'assets/tiktok.png', link: 'https://www.tiktok.com'),
-    socialMediaModel(
-        image: 'assets/twitter.png', link: 'https://www.twitter.com'),
-    socialMediaModel(
-        image: 'assets/whatsapp.png', link: 'https://wa.me/+201061231448'),
-    socialMediaModel(
-        image: 'assets/youtube.png', link: 'https://www.youtube.com'),
+    socialMediaModel(image: 'face', link: 'https://www.facebook.com'),
+    socialMediaModel(image: 'insta', link: 'https://www.instagram.com'),
+    socialMediaModel(image: 'linkedin', link: 'https://www.linkedin.com'),
+    socialMediaModel(image: 'pinterest', link: 'https://www.pinterest.com'),
+    socialMediaModel(image: 'snap', link: 'https://www.snapchat.com'),
+    socialMediaModel(image: 'tiktok', link: 'https://www.tiktok.com'),
+    socialMediaModel(image: 'twitter', link: 'https://www.twitter.com'),
+    socialMediaModel(image: 'whatsapp', link: 'https://wa.me/+201061231448'),
+    socialMediaModel(image: 'youtube', link: 'https://www.youtube.com'),
   ];
 
   @override
@@ -89,4 +79,3 @@ class ContactsPage extends StatelessWidget {
     );
   }
 }
-
